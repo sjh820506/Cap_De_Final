@@ -7,9 +7,16 @@ int main() {
     int count_minus = 0; // 음수의 갯수를 누적하는 변수
 
     for(i = 0; i <= 10 ; i++) {
-        printf("숫자 하나를 입력하세요. : ");
+        printf("%d번째 숫자 하나를 입력하세요. : ", i + 1);
 
-        scanf("%d", &number);
+        if(scanf("%d", &number) != 1) {
+            printf("잘못 입력하셨습니다. 다시 입력해주세요.\n");
+
+            while(getchar() != '\n');
+            
+            i--; 
+            continue;
+        }
 
         if(number > 0) {
             count_plus++;
@@ -20,7 +27,7 @@ int main() {
     }
 
     printf("입력된 숫자 중에서 양의 정수는 %d개, 
-        음의 정수는 %d개 입니다. \n", count_plus, count_minus);
+    음의 정수는 %d개 입니다. \n", count_plus, count_minus);
 
     return 0;
 }
