@@ -18,11 +18,11 @@ int main() {
             continue;
         }
 
-        if(number > 0) {
-            count_plus++;
+        if(number > 0) { // number가 0 보다 크면...
+            count_plus++; // 양수를 세는 변수에 1을 더한다.
         }
-        else if (number < 0) {
-            count_minus++;
+        else if (number < 0) { // number가 0 보다 작으면...
+            count_minus++; // 음수를 세는 변수에 1을 더한다.
         }
     }
 
