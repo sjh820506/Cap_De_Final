@@ -1,10 +1,10 @@
 #include <stdio.h>
 
 int main() {
-    int i;
-    int number;
-    int count_plus = 0;
-    int count_minus = 0;
+    int i; // for문을 구현하기 위한 변수
+    int number; // 사용자로부터 숫자를 입력받기위한 변수
+    int count_plus = 0; // 양수의 갯수를 누적하는 변수
+    int count_minus = 0; // 음수의 갯수를 누적하는 변수
 
     for(i = 0; i <= 10 ; i++) {
         printf("숫자 하나를 입력하세요. : ");
